@@ -1,0 +1,19 @@
+import pandas as pd
+
+# Load the CSV file
+data = pd.read_csv('data.csv')
+
+# Retrieve column names
+columns = data.columns
+print("Columns in the dataset:")
+print(columns)
+
+# Select only the numeric columns for correlation calculation
+numeric_data = data.select_dtypes(include=['float64', 'int64'])
+
+# Calculate the correlation matrix
+correlation_matrix = numeric_data.corr()
+print("\nCorrelation matrix for numeric columns:")
+print(correlation_matrix)
+
+print("Task completed: Columns and correlation matrix for numeric columns displayed.")

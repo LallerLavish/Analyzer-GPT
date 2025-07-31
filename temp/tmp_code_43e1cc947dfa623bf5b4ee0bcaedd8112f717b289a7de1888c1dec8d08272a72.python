@@ -1,0 +1,9 @@
+import pandas as pd
+
+# Read the CSV file
+df = pd.read_csv('data.csv')
+
+# Print out unique values in the 'PROGRAM' column
+unique_programs = df['PROGRAM'].unique()
+print("Unique programs available in the dataset:")
+print(unique_programs)

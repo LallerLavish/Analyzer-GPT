@@ -1,0 +1,5 @@
+.venv
+.env
+Analyzer/config/__pycache__
+Analyzer/temp
+Analyzer/config/__pycache__/open_ai.cpython-313.pyc

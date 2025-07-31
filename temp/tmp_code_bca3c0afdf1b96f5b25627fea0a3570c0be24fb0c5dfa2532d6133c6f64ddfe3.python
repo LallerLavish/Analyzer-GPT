@@ -1,0 +1,22 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load the data
+data = pd.read_csv('data.csv')
+
+# Clean and parse 'Grade Level / Age Group'
+# Dropping NA values to focus on available data.
+grade_age_data = data['Grade Level / Age Group'].dropna()
+
+# Plot the data
+plt.figure(figsize=(10, 6))
+sns.countplot(y=grade_age_data, order=grade_age_data.value_counts().index)
+plt.title('Distribution of Grade Level / Age Group')
+plt.xlabel('Count')
+plt.ylabel('Grade Level / Age Group')
+
+# Save the plot
+plt.savefig('output.png')
+
+print("Graph has been generated and saved as 'output.png'.")

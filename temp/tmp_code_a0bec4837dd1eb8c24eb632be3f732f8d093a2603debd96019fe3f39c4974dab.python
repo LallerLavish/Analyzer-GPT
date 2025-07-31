@@ -1,0 +1,17 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load the CSV file
+data = pd.read_csv('data.csv')
+
+# Plotting the scatter plot between latitude and longitude
+plt.figure(figsize=(10, 6))
+plt.scatter(data['Longitude'], data['Latitude'], alpha=0.5, edgecolor='w', linewidth=0.5)
+plt.title('Scatter Plot of Latitude vs Longitude')
+plt.xlabel('Longitude')
+plt.ylabel('Latitude')
+plt.grid(True)
+plt.savefig('output.png')
+plt.show()
+
+print("Task completed: Scatter plot between latitude and longitude saved as 'output.png'.")

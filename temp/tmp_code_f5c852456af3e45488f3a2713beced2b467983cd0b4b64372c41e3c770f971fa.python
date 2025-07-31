@@ -1,0 +1,14 @@
+import pandas as pd
+
+# Read the CSV file
+df = pd.read_csv('data.csv')
+
+# Check for columns where all entries are unique or nearly unique, which might be redundant
+unique_value_counts = df.nunique()
+total_rows = len(df)
+
+# Identifying redundant columns - nearly all unique or constant values
+redundant_columns = unique_value_counts[(unique_value_counts == total_rows) | (unique_value_counts < 2)].index.tolist()
+
+print("Potential redundant columns based on uniqueness and utility:")
+print(redundant_columns)

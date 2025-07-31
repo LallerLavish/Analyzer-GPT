@@ -1,0 +1,16 @@
+import pandas as pd
+
+# Load the CSV file
+data = pd.read_csv('data.csv')
+
+# Retrieve column names
+columns = data.columns
+print("Columns in the dataset:")
+print(columns)
+
+# Calculate the correlation matrix
+correlation_matrix = data.corr()
+print("\nCorrelation matrix:")
+print(correlation_matrix)
+
+print("Task completed: Columns and correlation matrix displayed.")

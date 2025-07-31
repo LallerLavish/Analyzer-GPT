@@ -1,0 +1,13 @@
+import pandas as pd
+
+# Read the CSV file
+df = pd.read_csv('data.csv')
+
+# Hypothetical analysis: if 'PROGRAM' column contains sports activities
+# Let's assume we are to identify schools with sports in their program names
+sports_programs = df[df['PROGRAM'].str.contains('sports', case=False, na=False)]
+
+# Evaluate based on frequency or any other potential criteria (as an example, here, we assume it's the highest count)
+best_schools = sports_programs['SITE NAME'].value_counts().idxmax()
+
+print(f"The best school for a sports enthusiast based on the available data is: {best_schools}")

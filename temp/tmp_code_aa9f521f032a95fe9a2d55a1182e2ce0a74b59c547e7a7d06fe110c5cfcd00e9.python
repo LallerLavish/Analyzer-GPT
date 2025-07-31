@@ -1,0 +1,22 @@
+import pandas as pd
+
+# Load the data
+data = pd.read_csv('data.csv')
+
+# Get the first few rows of the dataframe
+head = data.head()
+
+# Get a summary of the dataframe
+info = data.info()
+
+# Get descriptive statistics
+description = data.describe(include='all')
+
+# Check for missing values
+missing_values = data.isnull().sum()
+
+# Display the information
+print("Data Head:\n", head)
+print("\nData Info:\n", info)
+print("\nDescriptive Statistics:\n", description)
+print("\nMissing Values:\n", missing_values)

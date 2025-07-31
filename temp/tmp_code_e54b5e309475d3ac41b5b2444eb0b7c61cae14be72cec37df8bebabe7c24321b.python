@@ -1,0 +1,11 @@
+import pandas as pd
+
+# Load the data from CSV file into a DataFrame
+file_path = 'DYCD_after-school_programs__Neighborhood_Development_Area__NDA__Family_Support.csv'
+data = pd.read_csv(file_path)
+
+# Generate descriptive statistics for numerical columns
+numeric_description = data.describe()
+
+# Display the descriptive statistics
+print(numeric_description)

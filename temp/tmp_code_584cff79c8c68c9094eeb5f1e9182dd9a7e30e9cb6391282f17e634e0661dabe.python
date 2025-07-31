@@ -1,0 +1,21 @@
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Read the CSV file
+df = pd.read_csv('data.csv')
+
+# Selecting only numeric columns for correlation computation
+numeric_df = df.select_dtypes(include=['float64', 'int64'])
+
+# Calculate correlation matrix for numeric columns
+correlation_matrix = numeric_df.corr()
+
+# Plotting the heatmap
+plt.figure(figsize=(10, 8))
+sns.heatmap(correlation_matrix, annot=True, fmt=".2f", cmap='coolwarm', cbar=True)
+plt.title('Correlation Coefficient Heatmap')
+plt.savefig('output.png')
+plt.show()
+
+print("The correlation coefficient heatmap has been generated and saved as 'output.png'.")
