@@ -11,7 +11,6 @@ https://youtu.be/dtOxtDNj3lQ
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue?logo=docker)](https://www.docker.com/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)](https://streamlit.io/)
 [![OpenAI GPT-4](https://img.shields.io/badge/OpenAI-GPT--4-black?logo=openai)](https://openai.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 > An **autonomous, multi-agent system** for cleaning, summarizing, and extracting insights from datasets using **Microsoft AutoGen**, **Docker**, and **OpenAI GPT-4** — all accessible through a **Streamlit UI**.
 
@@ -45,5 +44,5 @@ https://youtu.be/dtOxtDNj3lQ
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/your-username/multi-agent-data-analysis.git
-cd multi-agent-data-analysis
+git clone https://github.com/LallerLavish/Analyzer-GPT.git
+cd Analyzer-GPT
