@@ -16,8 +16,6 @@ https://youtu.be/dtOxtDNj3lQ
 
 ---
 
-## Demo Preview
-
 
 ## 🚀 Features
 
